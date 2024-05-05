@@ -7,6 +7,8 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddScoped<IWarehouseRepository, WarehouseRepository>();
 builder.Services.AddScoped<IWarehouseService, WarehouseService>();
+builder.Services.AddScoped<IProcedureRepository, ProcedureRepository>();
+builder.Services.AddScoped<IProcedureService, ProcedureService>();
 
 var app = builder.Build();
 
